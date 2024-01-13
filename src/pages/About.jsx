@@ -1,5 +1,5 @@
 import React from 'react';
-import {MainCard, SectionCard} from '../SectionCard';
+import {MainCard, SectionCard} from '../components/SectionCard';
 
 function About() {
   return (

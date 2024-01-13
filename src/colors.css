@@ -18,6 +18,33 @@
     --secondary-grey: #616161;
 }
 
+/*------------------------------------
+- Other CSS styling
+------------------------------------*/
+
+
+#home {
+    background-color: var(--primary-black);
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    position: absolute; 
+}
+
+.front {
+    z-index: 100;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+.gradient-orange {
+    background: radial-gradient(ellipse 80% 80% at -1% -1%, var(--accent-orange), 5%, var(--primary-black))
+}
+
+/*------------------------------------
+- Google Fonts
+------------------------------------*/
+
 .header-font-inter {
     font-family: 'Inter', sans-serif;
 }
