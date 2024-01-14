@@ -6,7 +6,7 @@ const Card = (props) => {
         <div className="frame col-md" id={props.id}>
             <div className="div">
                 <div className="text-wrapper lead text-white inconsolata-strong ">{props.header}</div>
-                <p className="p lead mb-4 text-white inconsolata-strong">{props.content}</p>
+                <p className="p mb-4 text-white inconsolata-strong">{props.content}</p>
             </div>
             <div className="div-2">
                 <div className="div-wrapper">

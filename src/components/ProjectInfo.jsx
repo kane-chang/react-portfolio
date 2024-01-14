@@ -31,7 +31,8 @@ const ProjectInfo = () => {
                 markers: true,
                 start: 'top 20%',
                 scrub: 0.5,
-                pin: '#four'
+                pin: '#three',
+                pinSpacing: false
             }
         })
     

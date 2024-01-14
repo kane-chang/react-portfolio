@@ -55,9 +55,10 @@ function Home() {
         trigger: '#bg',
         start: 'top top',
         endTrigger: '#six',
-        end: 'bottom +=100',
+        end: 'bottom top',
         pin: true,
         scrub: 1,
+        pinSpacing: false,
         // snap: {
         //   snapTo: [0, 0.18, 0.35, 0.45, 0.8], // snap to the closest label in the timeline
         //   duration: { min: 0.2, max: 2 }, // the snap animation should be at least 0.2 seconds, but no more than 3 seconds (determined by velocity)
@@ -92,7 +93,7 @@ function Home() {
     })
 
     ScrollTrigger.create({
-      trigger: '#four',
+      trigger: '#three',
       start: 'top +=200px',
       onUpdate: (self) => {
         if (self.direction > 0 && self.progress < 0.15) {
@@ -137,10 +138,7 @@ function Home() {
                 Placeat ipsam delectus accusantium id nulla tempore odio provident adipisci odit nobis. Corporis
                 molestias, illum deleniti animi soluta inventore quaerat architecto saepe?" id="about"/>
       <SectionCard header="let background = {" paragraph="asdsd" id="two"/>
-      <SectionCard header="Project 1" paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Placeat ipsam delectus accusantium id nulla tempore odio provident adipisci odit nobis. Corporis
-                molestias, illum deleniti animi soluta inventore quaerat architecto saepe?" id="three"/>
-      <ProjectSection id="four"/>
+      <ProjectSection id="three"/>
       <SectionCard header="Project 2" paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Placeat ipsam delectus accusantium id nulla tempore odio provident adipisci odit nobis. Corporis
                 molestias, illum deleniti animi soluta inventore quaerat architecto saepe?" id="six"/>
