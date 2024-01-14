@@ -32,12 +32,19 @@
     position: absolute; 
 }
 
-.front {
+#about, #two, #three, #four, #five, #six {
     z-index: 100;
     position: absolute;
     width: 100vw;
     height: 100vh;
+}
+
+#about {
     top: 100vh;
+}
+
+#two {
+    top: 200vh;
 }
 
 #three {
@@ -61,6 +68,13 @@
     width: 100vw;
     height: 100vh
 }
+#six {
+    z-index: 100;
+    position: absolute;
+    top: 600vh;
+    width: 100vw;
+    height: 100vh
+}
 
 .gradient-orange {
     background: radial-gradient(ellipse 80% 80% at -1% -1%, var(--accent-orange), 5%, var(--primary-black))
@@ -75,7 +89,7 @@
 }
 
 .body-font-inconsolata {
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Inconsolata', monospace !important;
 }
 
 .inconsolata-strong {
@@ -88,7 +102,12 @@ html {
 }
 
 .text-white {
-    color:white;
+    color:white !important;
+}
+
+.inter-semi {
+    font-family: 'Inter-SemiBold', sans-serif;
+    font-size: 2rem;
 }
 
 /*------------------------------------

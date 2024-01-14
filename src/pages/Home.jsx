@@ -4,7 +4,7 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import Background from '../components/Background';
-import {MainCard, SectionCard, AboutCard} from '../components/SectionCard';
+import {MainCard, SectionCard, AboutCard, ProjectSection} from '../components/SectionCard';
 
 gsap.registerPlugin(ScrollTrigger) 
 
@@ -54,10 +54,16 @@ function Home() {
       scrollTrigger: {
         trigger: '#bg',
         start: 'top top',
-        endTrigger: '#five',
+        endTrigger: '#six',
         end: 'bottom +=100',
         pin: true,
         scrub: 1,
+        // snap: {
+        //   snapTo: [0, 0.18, 0.35, 0.45, 0.8], // snap to the closest label in the timeline
+        //   duration: { min: 0.2, max: 2 }, // the snap animation should be at least 0.2 seconds, but no more than 3 seconds (determined by velocity)
+        //   // delay: 0.2, // wait 0.2 seconds from the last scroll event before doing the snapping
+        //   ease: "power1.inOut"
+        //  }, // the ease of the snap animation ("power3" by default)
         markers: {startColor: "white", endColor: "red", fontSize: "18px", fontWeight: "bold", indent: 20}
       }
     })
@@ -98,7 +104,7 @@ function Home() {
     })
 
     ScrollTrigger.create({
-      trigger: '#five',
+      trigger: '#six',
       start: 'top +=200px',
       onUpdate: (self) => {
         if (self.direction > 0 && self.progress < 0.15) {
@@ -130,13 +136,14 @@ function Home() {
       <AboutCard header="This is me." paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Placeat ipsam delectus accusantium id nulla tempore odio provident adipisci odit nobis. Corporis
                 molestias, illum deleniti animi soluta inventore quaerat architecto saepe?" id="about"/>
-      <SectionCard header="let background = {" paragraph="asdsd" id="three"/>
+      <SectionCard header="let background = {" paragraph="asdsd" id="two"/>
       <SectionCard header="Project 1" paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Placeat ipsam delectus accusantium id nulla tempore odio provident adipisci odit nobis. Corporis
-                molestias, illum deleniti animi soluta inventore quaerat architecto saepe?" id="four"/>
+                molestias, illum deleniti animi soluta inventore quaerat architecto saepe?" id="three"/>
+      <ProjectSection id="four"/>
       <SectionCard header="Project 2" paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Placeat ipsam delectus accusantium id nulla tempore odio provident adipisci odit nobis. Corporis
-                molestias, illum deleniti animi soluta inventore quaerat architecto saepe?" id="five"/>
+                molestias, illum deleniti animi soluta inventore quaerat architecto saepe?" id="six"/>
     </div>
   );
 }

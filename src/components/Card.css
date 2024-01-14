@@ -16,6 +16,8 @@
     padding: 16px 22px;
     position: relative;
     backdrop-filter: blur(10);
+    min-width: min-content;
+    opacity: 1;
 }
 
 .frame .div {
@@ -84,14 +86,14 @@
     /* font-weight: 400; */
     /* letter-spacing: 0; */
     /* line-height: normal; */
-    margin-top: -0.5px;
+    margin: -0.2rem 0;
     position: relative;
     white-space: nowrap;
     width: fit-content;
 }
 
 .frame .icon-smile {
-    height: 24px;
+    height: 90%;
     position: relative;
-    width: 24px;
+    width: 90%;
 }

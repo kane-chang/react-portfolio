@@ -1,0 +1,54 @@
+#view-frame {
+    height: min-content;
+    width: min-content;
+}
+
+
+
+.tag-frame {
+    align-items: center;
+    border: 1px solid;
+    border-color: #ffffff;
+    border-radius: 99px;
+    display: flex;
+    gap: 10px;
+    height: 4.5rem;
+    width: 4.5rem;
+    justify-content: center;
+    overflow: hidden;
+    padding: 8px;
+    position: relative;
+    
+}
+
+.tag-frame .icon-up-arrow {
+    height: fit-content;
+    margin-bottom: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: -8px;
+    position: relative;
+    width: fit-content;
+}
+
+
+.project-card {
+    align-items: flex-start;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-bottom: 0.5px solid rgba(255,255,255,0.2);
+    border-right: 0.5px solid rgba(255,255,255,0.2);
+    border-color: white;
+    border-radius: 8px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: hidden;
+    padding: 16px 22px;
+    position: relative;
+    backdrop-filter: blur(10);
+    min-width: min-content;
+    height: 100vh;
+}
