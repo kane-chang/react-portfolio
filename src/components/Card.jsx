@@ -3,7 +3,7 @@ import "./Card.css"
 
 const Card = (props) => {
   return (
-        <div className="frame col-md m-3">
+        <div className="frame col-md ">
             <div className="div">
                 <div className="text-wrapper lead text-white inconsolata-strong ">{props.header}</div>
                 <p className="p lead mb-4 text-white inconsolata-strong">{props.content}</p>

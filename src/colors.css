@@ -24,9 +24,10 @@
 
 
 #home {
-    background-color: var(--primary-black);
+    /* background-color: var(--primary-black); */
     width: 100vw;
     height: 100vh;
+    top: 0;
     z-index: 0;
     position: absolute; 
 }
@@ -36,7 +37,31 @@
     position: absolute;
     width: 100vw;
     height: 100vh;
+    top: 100vh;
 }
+
+#three {
+    z-index: 100;
+    position: absolute;
+    top: 300vh;
+    width: 100vw;
+    height: 100vh
+}
+#four {
+    z-index: 100;
+    position: absolute;
+    top: 400vh;
+    width: 100vw;
+    height: 100vh
+}
+#five {
+    z-index: 100;
+    position: absolute;
+    top: 500vh;
+    width: 100vw;
+    height: 100vh
+}
+
 .gradient-orange {
     background: radial-gradient(ellipse 80% 80% at -1% -1%, var(--accent-orange), 5%, var(--primary-black))
 }
