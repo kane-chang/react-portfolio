@@ -44,23 +44,23 @@
 }
 
 #two {
-    top: 200vh;
+    top: 300vh;
 }
 
 #three {
-    top: 300vh;
-}
-#four {
     top: 400vh;
 }
-#five {
+#four {
     top: 500vh;
 }
-#six {
+#five {
     top: 600vh;
 }
-#seven {
+#six {
     top: 700vh;
+}
+#seven {
+    top: 800vh;
 }
 
 .gradient-orange {

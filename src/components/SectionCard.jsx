@@ -35,7 +35,10 @@ const AboutCard = (props) => {
     useGSAP(() => {
         gsap.from(".frame", {
             scrollTrigger: {
-                trigger: '.frame'
+                trigger: '#about',
+                scrub: 1,
+                pin: "#about",
+                pinSpacing: false,
             },
             x: 800,
             opacity: 0,
