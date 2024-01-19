@@ -21,7 +21,9 @@
 /*------------------------------------
 - Other CSS styling
 ------------------------------------*/
-
+body {
+    background: var(--primary-black);
+}
 
 #home {
     /* background-color: var(--primary-black); */
